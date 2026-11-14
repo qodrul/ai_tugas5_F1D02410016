@@ -1,0 +1,108 @@
+{
+    "judul": "Sistem Pakar Rekomendasi Kesiapsiagaan Keluarga Menghadapi Banjir",
+    "batas": "Basis pengetahuan disusun dengan memparafrasakan panduan dan imbauan resmi BNPB mengenai kesiapsiagaan banjir dan keluarga. Sistem ini merupakan simulasi edukasi berbasis jawaban pengguna, bukan alat prediksi banjir, bukan pengganti informasi peringatan resmi BMKG/BNPB/BPBD, dan bukan instruksi evakuasi yang mengalahkan arahan petugas. Jika ada peringatan atau kondisi berbahaya, ikuti arahan otoritas setempat dan utamakan keselamatan.",
+    "sumber": {
+        "S1": {
+            "judul": "Buku Saku Tanggap Tangkas Tangguh Menghadapi Bencana",
+            "penerbit": "Badan Nasional Penanggulangan Bencana (BNPB)",
+            "url": "https://bnpb.go.id/storage/app/media/Buku%20BNPB/Buku%20Saku%20Bencana%20BNPB.pdf",
+            "tanggal_akses": "14 November 2026"
+        },
+        "S2": {
+            "judul": "BNPB Terbitkan Delapan Langkah Kesiapsiagaan Hadapi Musim Hujan 2026/2027",
+            "penerbit": "Badan Nasional Penanggulangan Bencana (BNPB)",
+            "url": "https://bnpb.go.id/berita/bnpb-terbitkan-delapan-langkah-kesiapsiagaan-hadapi-musim-hujan-2026-2027",
+            "tanggal_akses": "14 November 2026"
+        }
+    },
+    "aturan": [
+        {
+            "id": "R1",
+            "jika": [
+                "rumah berada di wilayah rawan banjir",
+                "hujan deras berlangsung lama"
+            ],
+            "mode": "dan",
+            "maka": "risiko banjir perlu diwaspadai",
+            "sumber": [
+                "S1",
+                "S2"
+            ]
+        },
+        {
+            "id": "R2",
+            "jika": [
+                "risiko banjir perlu diwaspadai",
+                "jalur evakuasi belum diketahui"
+            ],
+            "mode": "dan",
+            "maka": "perlu menentukan jalur dan titik kumpul",
+            "sumber": [
+                "S1",
+                "S2"
+            ]
+        },
+        {
+            "id": "R3",
+            "jika": [
+                "risiko banjir perlu diwaspadai",
+                "tas siaga belum tersedia"
+            ],
+            "mode": "dan",
+            "maka": "perlu menyiapkan tas siaga keluarga",
+            "sumber": [
+                "S1",
+                "S2"
+            ]
+        },
+        {
+            "id": "R4",
+            "jika": [
+                "air mulai masuk ke rumah",
+                "peralatan listrik berada dekat genangan"
+            ],
+            "mode": "dan",
+            "maka": "ada potensi bahaya listrik",
+            "sumber": [
+                "S1"
+            ]
+        },
+        {
+            "id": "R5",
+            "jika": [
+                "ada potensi bahaya listrik",
+                "genangan air terus meningkat"
+            ],
+            "mode": "dan",
+            "maka": "jauhi area tergenang dan ikuti arahan petugas terkait listrik",
+            "sumber": [
+                "S1"
+            ]
+        },
+        {
+            "id": "R6",
+            "jika": [
+                "peringatan banjir resmi diterima",
+                "rumah berada di wilayah rawan banjir"
+            ],
+            "mode": "dan",
+            "maka": "siapkan evakuasi sesuai arahan resmi",
+            "sumber": [
+                "S1",
+                "S2"
+            ]
+        },
+        {
+            "id": "R7",
+            "jika": [
+                "risiko banjir perlu diwaspadai",
+                "dokumen penting belum diamankan"
+            ],
+            "mode": "dan",
+            "maka": "amankan dokumen dan barang penting di tempat lebih tinggi",
+            "sumber": [
+                "S1"
+            ]
+        }
+    ]
+}
